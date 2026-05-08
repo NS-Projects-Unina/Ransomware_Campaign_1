@@ -40,3 +40,5 @@ In questo modo la vittima (Android) potrà scaricare il payload malevolo dal lin
 *sudo systemctl status apache2*
 
 ### La sessione di Apache è aperta, fin quando resta aperta, è possibile scaricare ed eseguire il payload dal link "http://192.168.1.9/Marinobus_Update.apk"
+
+### SEGUIRE CON I PASSAGGI NEL FILE METERPRETER_SESSION !!
