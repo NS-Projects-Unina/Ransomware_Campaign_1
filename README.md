@@ -7,3 +7,15 @@ più precisamente nel sud Italia; l'obiettivo dell'attacco è colpire i dati sen
 riscatto.
 
 ### FASE 1 - Ricognizione
+Come primo passo si è svolta una ricognizione per individuare i contatti di assistenza e i contatti di segreteria.
+Dopo di che si procede all'accedere alla sede centrale di Marinobus (attualmente risiede ad Altamura (BA); l'obiettivo 
+è quello di entrare all'interno della struttura fisica e piazzarsi nell'area ristoro della struttura.
+
+## FASE 2 - Connessione Wi-Fi
+Per procedere con l'attacco, si ha bisogno di connettersi alla Wi-Fi della struttura, si procede semplicemente chiedendo 
+la password della rete (Prima vulnerabilità possibile - non dovrebbe essere comunicata cosi facilmente!)
+
+Una volta connessi, rileviamo gli indirizzi IP connessi, in particolare il nostro indirizzo IP, dove verrà reindirizzato
+il traffico della rete e l'indirizzo IP di Kali, creando un "Ponte" tra i due IP
+
+# FASE 3 - Stabilire le regole del Firewall
