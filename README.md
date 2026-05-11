@@ -59,3 +59,22 @@ ne sia a conoscenza.
 
 # ATTACCO RANSOMWARE - Creazione del file malevolo da inviare tramite messaggio all'DBA
 
+## FASE 3.1 - PREPARAZIONE AMBIENTE - File con dati da criptare
+L'attacco ransomware inizia con la preparazione del file vittima, sempre all'interno dell'ambiente simulato kali si
+è elaborato una cartella contenente un file con nomi, cognomi e metodi di pagamento (fasulli) che verranno poi criptati/
+decriptati con l eseguibile ransomware.
+
+## FASE 3.2 - ELABORAZIONE VIRUS - Costruzione del ransomware
+Si procede con l'elaborazione del virus ransomware_win.py in python: in questo file si utilizza la libreria
+Fernet di python, e si costruisce un codice ad hoc che trova la cartella contentente il file dei dati nel 
+dispositivo, poi procede con il crypting impostando l'estensione del file vittima con ".locked"; successivamente
+viene generato un file con la (finta) richiesta di riscatto, il quale, dopo il pagamento, avrebbe decryptato il
+file e rimosso l'estensione ".locked".
+
+## FASE 3.3 - COMPILAZIONE DELL'ESEGUIBILE - Per inviare il file alla vittima e concludere l'attacco
+L'ultima fase prevede l'elaborazione dell'eseguibile, il quale automatizza tutto il procedimento
+crypting-riscatto-decrypting.
+
+E' bene specificare che le "vittime" sono in realtà persone consensienti e che tutti gli attacchi sono stati
+svolti su kali linux!
+
